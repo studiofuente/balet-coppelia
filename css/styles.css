@@ -2939,16 +2939,16 @@ img.u-pull-left {
 }
 
 .theme-particles .s-intro {
-    background : linear-gradient(var(--fuente-darker),var(--fuente-dark));
+    background       : linear-gradient(var(--fuente-darker),var(--fuente-dark));
 }
 
 .theme-particles .s-intro .s-intro__content {
-    pointer-events : none;
+    pointer-events   : none;
 }
 
 .theme-particles .s-intro .s-intro__content-bottom,
 .theme-particles .s-intro .s-intro__scroll {
-    pointer-events : auto;
+    pointer-events   : auto;
 }
 
 /* --------------------------------------------------------------------
