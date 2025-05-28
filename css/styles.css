@@ -388,37 +388,6 @@ img {
     border-style : none;
 }
 
-.img_left {
-    border-style : none;
-    margin       : 0;
-    width        : 100%;
-    align-items  : left;
-}
-
-.img_right {
-    border-style : none;
-    margin       : 0;
-    width        : 100%;
-    align-items  : right;
-}
-
-.img_inline {
-    border-style : none;
-    margin       : 0;
-    width        : 50%;
-    align-items  : right;
-}
-
-.img_seal {
-    border-style : none;
-    margin     : 0;
-    transform  : translate(0, 200%);
-    position   : absolute;
-    top        : calc(50% + var(--vspace-1));
-    right      : calc(var(--gutter) / 0.5);
-    width      : 15%;
-}
-
 button,
 input,
 optgroup,
@@ -2792,11 +2761,11 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-header {
-    --logo-width : 9.6rem;
+    --logo-width : 38%;
     z-index      : 100;
     width        : 100%;
     position     : absolute;
-    top          : var(--vspace-1_25);
+    top          : 5vh;
     left         : 0;
 }
 
@@ -2814,7 +2783,7 @@ img.u-pull-left {
     transform : translate(0, -50%);
     position  : absolute;
     top       : 50%;
-    left      : 88%;
+    left      : 82%;
 }
 
 .s-header__logo a {
@@ -2840,8 +2809,8 @@ img.u-pull-left {
     margin     : 0;
     transform  : translate(0, -50%);
     position   : absolute;
-    top        : calc(50% - var(--vspace-0_75));
-    right      : calc(var(--gutter) / 2);
+    top        : calc(60% - var(--vspace-0_75));
+    right      : var(--gutter);
 }
 
 .s-header__social li {
@@ -2863,18 +2832,31 @@ img.u-pull-left {
     fill : white;
 }
 
+.s-header__seal {
+    display    : flex;
+    position   : absolute;
+    top        : 12.5vh;
+    right      : var(--gutter);
+    width      : 15%;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * header
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
     .s-header {
-        --logo-width : 8rem;
+        --logo-width : 25%;
         top          : var(--vspace-0_5);
+    }
+
+    .s-header__logo {
+        left : calc(1.3vw + var(--gutter));
     }
 
     .s-header__social {
         top : calc(50% - var(--vspace-0_25));
+        right : calc(2vw + .8rem);
     }
 
     .s-header__social li {
@@ -2885,11 +2867,15 @@ img.u-pull-left {
         height : var(--vspace-0_75);
         width  : var(--vspace-0_75);
     }
+
+    .s-header__seal {
+        top : 11vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .s-header {
-        --logo-width : 7.2rem;
+        --logo-width : 25%;
     }
 
     .s-header__logo {
@@ -2897,7 +2883,12 @@ img.u-pull-left {
     }
 
     .s-header__social {
-        right : calc(6vw + .8rem);
+        right : calc(2vw + .4rem);
+        top : 4rem;
+    }
+    
+    .s-header__seal {
+        top : 8vh;
     }
 }
 
@@ -2905,6 +2896,24 @@ img.u-pull-left {
     .s-header {
         top : 0;
     }
+
+    .s-header__logo {
+        left : calc(6vw + var(--gutter));
+    }
+
+    .s-header__social {
+        right : calc(2vw + .4rem);
+        top : 4rem;
+    }
+
+    .s-header__social li {
+        margin-right : 0.8rem;
+    }
+    
+    .s-header__seal {
+        top : 4rem;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -2914,14 +2923,20 @@ img.u-pull-left {
 
     .s-header__logo {
         left : calc(6vw + .4rem);
+        top : 6.2rem;
     }
 
     .s-header__social {
-        right : calc(6vw + .4rem);
+        right : calc(2vw + .4rem);
+        top : 4rem;
     }
 
     .s-header__social li {
         margin-right : 0.8rem;
+    }
+    
+    .s-header__seal {
+        top : 4rem;
     }
 }
 
@@ -2932,11 +2947,13 @@ img.u-pull-left {
  *
  *
  * ------------------------------------------------------------------- */
+
+
 .s-intro {
     background-color : var(--color-body);
     width            : 100%;
     height           : 110vh;
-    min-height       : calc(26 * var(--space));
+    min-height       : calc(26.5 * var(--space));
     overflow         : hidden;
     position         : relative;
 }
@@ -3127,10 +3144,10 @@ img.u-pull-left {
     z-index        : 1;
     max-width      : var(--width-wider);
     align-items    : flex-end;
-    height         : 100vh;
-    min-height     : calc(25.5 * var(--space));
+    height         : 90vh;
+    min-height     : calc(26.5 * var(--space));
     padding-top    : 10vh;
-    padding-bottom : 8.8rem;
+    padding-bottom : 10vh;
     position       : relative;
 }
 
