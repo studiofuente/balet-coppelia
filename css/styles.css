@@ -1566,7 +1566,7 @@ dfn[title] {
 }
 
 mark {
-    background : var(--color-1-lighter);
+    background : var(--fuente-lightest);
     color      : var(--color-black);
 }
 
@@ -3380,8 +3380,8 @@ img.u-pull-left {
 @media screen and (max-width: 1200px) {
     .s-intro {
         min-height : calc(25.8 * var(--space));
-    }
-    
+}
+
     .s-intro .counter__time {
         font-size : 11.2rem;
     }
@@ -3438,7 +3438,7 @@ img.u-pull-left {
 @media screen and (max-width: 500px) {
     .s-intro {
         min-height : calc(32.5 * var(--space));
-    }
+}
 
     .s-intro__content-title {
         font-size     : var(--text-md);
@@ -3457,7 +3457,7 @@ img.u-pull-left {
 @media screen and (max-width: 400px) {
     .s-intro {
         min-height : calc(31.8 * var(--space));
-    }
+}
 
     .s-intro .counter__time {
         font-size : 6.6rem;
